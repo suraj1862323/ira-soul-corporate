@@ -41,3 +41,8 @@ body{background:#fbfaf7}
 @media(max-width:900px){.hero-art{transform:scale(.92);transform-origin:center right}}
 @media(max-width:650px){.hero-art{transform:scale(.72);transform-origin:top right}.hero-proof div{padding:8px 9px}.service-card:hover,.client-tile:hover{transform:none}.card-top{transform:translateZ(70px) rotateY(-5deg)}.card-bottom{transform:translateZ(85px) rotateY(5deg)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Official IRA SOUL brand mark */
+.brand{gap:0}
+.brand-logo{display:block;width:76px;height:76px;object-fit:contain;border-radius:50%;background:#fff;filter:drop-shadow(0 5px 9px rgba(11,24,48,.13));}
+@media(max-width:650px){.brand-logo{width:66px;height:66px}}
