@@ -89,3 +89,23 @@ body{background:#fbfaf7}
  .hero-content{max-width:100%}
  .hero-proof{gap:16px;flex-wrap:wrap}
 }
+
+
+/* Premium client image carousel */
+.client-carousel{position:relative;margin-top:18px;padding:0 54px}
+.client-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:18px 4px 30px;scrollbar-width:none;cursor:grab;overscroll-behavior-x:contain}
+.client-track::-webkit-scrollbar{display:none}
+.client-track.dragging{cursor:grabbing;scroll-behavior:auto;user-select:none}
+.client-track .client-tile,.client-track .portfolio-card{flex:0 0 clamp(245px,27%,330px);min-height:350px;border:1px solid #e7e3d9;border-radius:14px;overflow:hidden;padding:0 22px 24px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:14px;position:relative;scroll-snap-align:start;background:linear-gradient(160deg,#fff,#f5f3ed);box-shadow:0 12px 28px rgba(11,24,48,.08);transition:transform .28s,box-shadow .28s}
+.client-track .client-tile:hover,.client-track .portfolio-card:hover{transform:translateY(-7px);box-shadow:0 22px 40px rgba(11,24,48,.15)}
+.client-track .client-tile img,.client-track .portfolio-card img{display:block;width:100%;height:185px;object-fit:cover;position:absolute;top:0;left:0;pointer-events:none;-webkit-user-drag:none}
+.client-track .client-tile:after,.client-track .portfolio-card:after{content:"";position:absolute;left:0;right:0;top:110px;height:85px;background:linear-gradient(transparent,#fff);pointer-events:none}
+.client-track .client-tile>span,.client-track .portfolio-card>span{position:relative;margin-top:185px;color:#a27b3e;font-size:9px;letter-spacing:1.5px;font-weight:800}
+.client-track .client-tile strong,.client-track .portfolio-card h2{position:relative;margin:0;font:800 21px/1.2 Manrope;color:#10213b;letter-spacing:-.5px}
+.client-track .client-tile small,.client-track .portfolio-card small{position:relative;font-size:9px;letter-spacing:1.4px;color:#9b7a42;font-weight:800}
+.carousel-arrow{position:absolute;z-index:2;top:45%;width:42px;height:42px;border:1px solid rgba(176,139,76,.45);border-radius:50%;background:linear-gradient(145deg,#fff,#eee8dc);color:#132541;font-size:27px;line-height:1;box-shadow:0 8px 20px rgba(11,24,48,.13);cursor:pointer;transition:transform .2s,box-shadow .2s}
+.carousel-arrow:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(11,24,48,.2)}
+.carousel-arrow.prev{left:0}.carousel-arrow.next{right:0}
+.portfolio-carousel .client-track .portfolio-card{min-height:390px}
+img,.brand-logo{-webkit-user-drag:none;user-select:none;-webkit-user-select:none}
+@media(max-width:650px){.client-carousel{padding:0 34px}.client-track{gap:13px}.client-track .client-tile,.client-track .portfolio-card{flex-basis:82%;min-height:330px}.client-track .client-tile img,.client-track .portfolio-card img{height:170px}.client-track .client-tile>span,.client-track .portfolio-card>span{margin-top:170px}.carousel-arrow{width:34px;height:34px;font-size:22px}}
